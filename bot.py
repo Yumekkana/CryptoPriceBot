@@ -10,7 +10,7 @@ from telegram.ext import (
     ConversationHandler,
 )
 
-from crypto_price import crypto_price as get_crypto_price
+from crypto_data import get_crypto_data, get_crypto_price
 from currency_convert import currency_converter
 
 load_dotenv()
