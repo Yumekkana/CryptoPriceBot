@@ -40,12 +40,14 @@ def get_crypto_price(symbol):
             return coin["quote"]["USD"]["price"]
 
 
-def get_crypto_list():
+def get_crypto_list(start=0, limit=20):
     data = get_crypto_data()
     data = json.loads(data)
 
+    coins = data["data"][start:start + limit]
+
     return "\n".join(
         f'{coin["name"]}: {coin["symbol"]}'
-        for coin in data["data"][:20]
+        for coin in coins
     )
 
