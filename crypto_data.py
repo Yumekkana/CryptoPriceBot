@@ -12,7 +12,7 @@ def get_crypto_data():
     params = urllib.parse.urlencode(
         {
             "start": "1",
-            "limit": "10",
+            "limit": "500",
             "convert": "USD",
         }
     )
@@ -46,6 +46,6 @@ def get_crypto_list():
 
     return "\n".join(
         f'{coin["name"]}: {coin["symbol"]}'
-        for coin in data["data"]
+        for coin in data["data"][:20]
     )
 
