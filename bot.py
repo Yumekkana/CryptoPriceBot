@@ -50,7 +50,33 @@ MORE_KEYBOARD = InlineKeyboardMarkup(
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Hi 👋 Choose an option:",
+        '''🚀 Welcome to Crypto Price Bot 👋
+
+This bot helps you check live crypto prices in different currencies 💰
+
+Here’s how to use it:
+
+📋 **Crypto list**
+View available cryptocurrencies and their symbols
+Example: Bitcoin → BTC
+
+💱 **Currency list**
+View supported currency symbols
+Example: US Dollar → USD, Euro → EUR
+
+💰 **Check price**
+
+1. Send a crypto symbol (BTC, ETH, SOL...)
+2. Then send a currency symbol (USD, EUR, GBP...)
+3. The bot will instantly convert the crypto price for you ⚡
+
+❗ Important:
+Please use SYMBOLS only, not full names.
+✅ BTC
+❌ Bitcoin
+
+If you don’t know the symbols, check the Crypto list or Currency list first 😊
+''',
         reply_markup=MAIN_MENU
     )
 

@@ -22,6 +22,10 @@ Built with Python and powered by live market data APIs.
 <p align="center">
   <img src="screenshots/profile.png" width="240", height="350"/>
   <img src="screenshots/description.png" width="240", height="350"/>
+  <img src="screenshots/start.png" width="240", height="350"/>
+  <img src="screenshots/cryptolist.png" width="240", height="350"/>
+  <img src="screenshots/currencylist.png" width="240", height="350"/>
+  <img src="screenshots/price.png" width="240", height="350"/>
 </p>
 
 ---
